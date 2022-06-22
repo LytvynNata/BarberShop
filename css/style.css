@@ -12,22 +12,20 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
+/* * {
+    box-sizing: border-box;
+} */
 
 h1,
 h2 {
     font-family: Raleway, sans-serif;
 }
 
-p {
-    margin: 0;
-}
-
-a {
-    text-decoration: none;
-}
-
-ul {
-    list-style: none;
+.container {
+    width: 1200px;
+    padding: 0 15px 0 15px;
+    margin: 0 auto;
+    outline: 2px solid red;
 }
 
 .visually-hidden {
@@ -64,7 +62,9 @@ ul {
 /*------------------- HEADER --------------------*/
 
 .header {
-    background-color: grey;
+    background-color: green;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .header-link {
@@ -136,6 +136,7 @@ background-color: var(--accent-color);
 
 .hero-pre-title {
     color: rgba(157, 164, 189, 0.6);
+    margin-bottom: 20px;
 }
 
 .hero-title {
@@ -145,6 +146,7 @@ line-height: 1.18;
 letter-spacing: 0.05em;
 
 color: var(--primary-title-color);
+margin-bottom: 20px;
 }
 
 .hero-after-title {
@@ -156,12 +158,18 @@ color: var(--primary-title-color);
 }
 
 /* -----------------ABOUT------------------ */
+.about {
+    padding-top: 163px;
+    padding-bottom: 88px;
+}
 .about-pre-title {
     color: var(--secondary-title-color);
+    margin-bottom: 20px;
 }
 
 .about-title {
     color: var(--secondary-title-color);
+    margin-bottom: 20px;
 }
 
 .about-after-title {
@@ -169,6 +177,7 @@ color: var(--primary-title-color);
     line-height: calc(30 / 18);
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
+    margin-bottom: 20px;
 
 }
 
@@ -177,6 +186,7 @@ font-size: 14px;
 line-height: calc(26 / 14);
 letter-spacing: 0.02em;
 color: var(--secondary-text-color);
+margin-bottom: 38px;
 }
 
 .about-btn {
@@ -198,15 +208,19 @@ color: var(--secondary-text-color);
 
 .prices {
     background-color: gray;
+    padding-top: 130px;
+    padding-bottom: 130px;
 }
 .prices-pre-title {
     color: rgba(157, 164, 189, 0.6);
+    margin-bottom: 20px;
 }
 
 .prices-title {
     color: var(--header-text-color);
+    margin-bottom: 44px;
 }
-
+ 
 .prices-text {
     font-size: 18px;
     line-height: calc(30 / 18);
@@ -231,6 +245,10 @@ color: var(--secondary-text-color);
 }
 
 /* -----------------------------REASONS -----------------------*/
+.reasons {
+    padding-top: 143px;
+padding-bottom: 137px;
+}
 .reasons-item-count {
     font-weight: 700;
     font-size: 42px;
@@ -250,9 +268,11 @@ color: var(--secondary-text-color);
 
 .reasons-pre-title {
     color: var(--secondary-title-color);
+    margin-bottom: 20px;
 }
 .reasons-title {
     color: var(--secondary-title-color);
+    margin-bottom: 20px;
 }
 .reasons-after-title {
     font-size: 18px;
@@ -262,12 +282,24 @@ color: var(--secondary-text-color);
 }
 
 /* -----------------------------MASTERS -----------------------*/
+.masters {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
 .masters-pre-title {
     color: var(--secondary-title-color);
+    margin-bottom: 20px;
 }
 
 .masters-title {
     color: var(--secondary-title-color);
+    margin-bottom: 44px;
+}
+
+.masters-item-content {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .masters-name {
     font-weight: 400;
@@ -276,6 +308,8 @@ color: var(--secondary-text-color);
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--secondary-title-color);
+
+    margin-bottom: 8px;
 }
 
 .masters-skill {
@@ -288,14 +322,21 @@ color: var(--secondary-text-color);
 }
 
 /* -----------------------------GALLERY -----------------------*/
+.gallery {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
 
 .gallery-pre-title {
     color: var(--secondary-title-color);
+    margin-bottom: 44px;
 }
 
 /* -----------------------------APPOINTMENT -----------------------*/
 .appointment {
     background-color: gray;
+    padding-top: 130px;
+    padding-bottom: 193px;
 }
 .appointment-title {
     color: var(--primary-title-color);
@@ -305,12 +346,18 @@ color: var(--secondary-text-color);
 
 .contacts {
     background-color: gray;
+    padding-top: 130px;
+    padding-bottom: 130px;
 }
 .contacts-title {
     color: var(--header-text-color);
+    margin-bottom: 44px;
 }
 address {
     font-style: normal;
+}
+.contacts-item:not(:last-child) {
+    margin-bottom: 20px;
 }
 .contacts-link {
     color: var(--primary-text-color);
@@ -322,6 +369,9 @@ address {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #FFFFFF;
+
+    margin-top: 70px;
+    margin-bottom: 20px;
 }
 .contacts-timetable {
     font-size: 18px;
@@ -331,6 +381,11 @@ address {
 }
 
 /* -----------------------------FOOTER-----------------------*/
+
+.footer {
+padding-top: 57px;
+padding-bottom: 55px;
+}
 
 .footer-copyright {
     font-weight: 600;
