@@ -59,6 +59,21 @@ h2 {
         letter-spacing: 0.05em;
 }
 
+.btn {
+        font-family: inherit;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.33;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+
+    background-color: transparent;
+    box-sizing: border-box;
+    border: 1px solid #FF6C00;
+    border-radius: 25px;
+    min-width: 160px;
+    height: 40px;
+}
 /*------------------- HEADER --------------------*/
 
 .header {
@@ -66,15 +81,32 @@ h2 {
     padding-top: 32px;
     padding-bottom: 32px;
 }
+.header-container {
+    display: flex;
+    align-items: center;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+}
 
+.logo {
+    margin-right: 70px;
+}
+.header-list {
+    display: flex;
+}
+.header-item + .header-item  {
+margin-left: 40px;
+}
 .header-link {
     font-weight: 600;
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.1em;
-    
     color: var(--header-text-color);
 }
+
 
 .header-link:hover,
 .header-link:focus {
@@ -84,7 +116,9 @@ color: var(--accent-color);
 .current {
   color: var(--accent-color);  
 }
-
+.header-contact {
+    margin-left: auto;
+}
 .header-link-tel {
     font-weight: 600;
     font-size: 12px;
@@ -99,14 +133,8 @@ color: var(--accent-color);
 }
 
 .header-btn {
-    font-family: inherit;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.09em;
-    
     color: var(--primary-btn-color);
-    background-color: rgba(25, 28, 38, 0.2);
+    margin-left: 40px;
 }
 
 .header-btn:hover,
@@ -117,9 +145,20 @@ background-color: var(--accent-color);
 
 /*-------------------- HERO ------------------------*/
 .hero {
-    background-color: gray;
+  
+}
+.hero-container {
+    display: flex;
+}
+.hero-list {
+    width: 90px;
 }
 
+.hero-right {
+background-color: gray;
+flex-grow: 1;
+padding: 271px 0 199px 99px;
+}
 .hero-link {
     font-family: inherit;
     font-weight: 600;
@@ -162,6 +201,21 @@ margin-bottom: 20px;
     padding-top: 163px;
     padding-bottom: 88px;
 }
+.about-container {
+    display: flex;
+}
+.about-list {
+    display: flex;
+}
+
+.about-item + .about-item {
+    margin-left: 30px;
+}
+
+.about-right {
+    margin-left: 64px;
+    margin-right: auto;
+}
 .about-pre-title {
     color: var(--secondary-title-color);
     margin-bottom: 20px;
@@ -190,14 +244,9 @@ margin-bottom: 38px;
 }
 
 .about-btn {
-    font-family: inerhit;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
     color: var(--secondary-btn-color);
 }
+
 .about-btn:hover,
 .about-btn:hover {
     color: #FFFFFF;
@@ -211,6 +260,7 @@ margin-bottom: 38px;
     padding-top: 130px;
     padding-bottom: 130px;
 }
+
 .prices-pre-title {
     color: rgba(157, 164, 189, 0.6);
     margin-bottom: 20px;
@@ -220,7 +270,10 @@ margin-bottom: 38px;
     color: var(--header-text-color);
     margin-bottom: 44px;
 }
- 
+.prices-blocks {
+    display: flex;
+}
+
 .prices-text {
     font-size: 18px;
     line-height: calc(30 / 18);
@@ -229,13 +282,6 @@ margin-bottom: 38px;
 }
 
 .prices-btn {
-    font-family: inerhit;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-    background-color: rgba(25, 28, 38, 0.2);
     color: var(--primary-btn-color);
 }
 
@@ -297,6 +343,20 @@ padding-bottom: 137px;
     margin-bottom: 44px;
 }
 
+.masters-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+}
+
+
+.masters-item {
+   width: 370px;
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
 .masters-item-content {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -332,6 +392,21 @@ padding-bottom: 137px;
     margin-bottom: 44px;
 }
 
+.gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+}
+
+
+
+.gallery-item {
+    width: 270px;
+    flex-basis: calc(100% / 4 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
 /* -----------------------------APPOINTMENT -----------------------*/
 .appointment {
     background-color: gray;
@@ -385,6 +460,13 @@ address {
 .footer {
 padding-top: 57px;
 padding-bottom: 55px;
+background-color: green;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+
 }
 
 .footer-copyright {
@@ -393,6 +475,12 @@ padding-bottom: 55px;
     line-height: calc(15 / 11);
     letter-spacing: 0.2em;
     color: var(--primary-text-color);
+}
+.footer-item + .footer-item {
+margin-left: 40px;
+}
+.footer-list {
+    display: flex;
 }
 
 .footer-link {
